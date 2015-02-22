@@ -1,42 +1,21 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Javascript Assignment Name
+# Jquery Todo Lab
 
 ## Objectives
 
 By the end of this, students should be able to:
 
-- Objective 1
-- Objective 2
-- Objective 3
+- Structure a jquery app to manipulate dom elements
+- Append and remove items on a list
+- Modify the status of items in a list
 
 ## Instructions
 
-Include explict step-by-step instructions about the goals of the assignment, and how to run the code.
-
-Make sure to wrap section of code in appropriate markdown like `ls -al`, and denote the language as below for longer sections:
-
-```javascript
-function(){
-  var x = 2
-  var y = 3
-  return x + y
-};
-
-```
+Create a single page todo app, where you can add items to a list (things to do), mark them as complete, and delete them if needed from either list. Everything should go away if the page is refreshed, and there is no need to persist items to a database.
 
 ## Bonus (Optional Section)
 
-If you're looking for extra challenge or practice once you've completed the above, try to...
-
-## Notes
-
-Gotcha's and extra information
-
-## Additional Resources
-
-List additional related resources such as videos, blog posts and official documentation.
-
-- Item 1
-- Item 2
-- Item 3
+- Write Jasmine tests to ensure the functionality, or even better use a test driven process to write the solution to start with
+- Create some way to edit the name/text of a todo item when you click on it.
+- Persist the list to Firebase
