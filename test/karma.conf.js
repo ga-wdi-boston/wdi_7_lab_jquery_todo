@@ -7,7 +7,7 @@ module.exports = function(config) {
   config.set({
     basePath: '../',
     autoWatch: true,
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine-jquery', 'jasmine'],
     singleRun: false,
     colors: true,
     urlRoot: '_karma_',
@@ -22,7 +22,8 @@ module.exports = function(config) {
     plugins: [
       'karma-phantomjs-launcher',
       'karma-jasmine',
-      'karma-coverage'
+      'karma-coverage',
+      'karma-jasmine-jquery'
     ],
     reporters: ['progress','coverage'],
 
