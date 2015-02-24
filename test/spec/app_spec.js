@@ -1,0 +1,27 @@
+// 'use strict'
+// // jasmine.getFixtures().fixturesPath = 'test/fixtures';
+
+// setFixtures('<input type=\'text\' id=\'list\'></input><ul id=\'todos\'></ul>');
+
+describe('basic test functions', function() {
+  it('will see if it can see a list', function(){
+    setFixtures("<ul></ul>");
+    expect($('ul')).toExist();
+    expect($('p')).not.toExist();
+  });
+});
+ describe('list', function(){
+//   it('adds a list item', function(){
+//     setFixtures("<ul id='list'></ul>");
+//     addTaskToList($('#list'),'dog');
+//     expect($('li')).toExist();
+//     expect($('li')).toContainText('dog');
+//   });
+  it('adds lets you fill in and submit an item', function(){
+    setFixtures("<input id='task'></input><ul id='list'></ul>");
+    $('#task').val('stuff');
+    $('#task').click(); return false;
+    expect($('li')).toExist();
+    expect($('li')).toContainText('stuff');
+  });
+});
