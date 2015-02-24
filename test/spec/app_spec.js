@@ -19,7 +19,7 @@ describe('list', function(){
   it('adds lets you fill in and submit an item', function(){
     setFixtures("<input id='task'></input><ul id='list'></ul>");
     $('#task').val('stuff');
-    $('#task').submit();
+    $('#task').click(); return false;
     expect($('li')).toExist();
     expect($('li')).toContainText('stuff');
   });
